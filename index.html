@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORMA — العمارة، حين تتحول الفكرة إلى مساحة.</title>
+<meta name="description" content="FORMA استوديو عمارة معاصر. مرر لتشاهد مبنى واحد يتحول من فكرة إلى شكل مكتمل.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div id="loader" class="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <span class="loader__mark" dir="ltr">FORMA</span>
+    <span class="loader__sub">جاري تحميل التجربة</span>
+    <div class="loader__bar"><div class="loader__bar-fill" id="loaderFill"></div></div>
+    <span class="loader__count" id="loaderCount" dir="ltr">00%</span>
+  </div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="siteNav">
+  <a href="#top" class="nav__mark" dir="ltr" data-hover>FORMA</a>
+  <nav class="nav__links">
+    <a href="#sequence" class="nav__link" data-hover>المشاريع</a>
+    <a href="#studio" class="nav__link" data-hover>الاستوديو</a>
+    <a href="#process" class="nav__link" data-hover>المنهج</a>
+    <a href="#contact" class="nav__link" data-hover>تواصل</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__inner">
+    <h1 class="hero__title" dir="ltr">FORMA</h1>
+    <p class="hero__tagline">العمارة... حين تتحول الفكرة إلى مساحة.</p>
+    <a href="#sequence" class="hero__cta" data-hover>اكتشف المشروع</a>
+  </div>
+  <div class="hero__scroll">
+    <span>اسحب للاستكشاف</span>
+    <div class="hero__scroll-line"><div class="hero__scroll-dot"></div></div>
+  </div>
+</section>
+
+<!-- ============ SEQUENCE (SCROLLYTELLING — FULLSCREEN) ============ -->
+<section class="sequence" id="sequence" style="--frames:10;">
+  <div class="sequence__sticky">
+
+    <div class="sequence__frame">
+      <img class="sequence__img sequence__img--a" id="imgA" src="assets/images/sequence/Frame_01.jpg" alt="FORMA — تسلسل معماري" decoding="async">
+      <img class="sequence__img sequence__img--b" id="imgB" src="assets/images/sequence/Frame_02.jpg" alt="" decoding="async">
+      <div class="sequence__scrim" aria-hidden="true"></div>
+      <div class="sequence__vignette" aria-hidden="true"></div>
+    </div>
+
+    <div class="sequence__ui">
+      <div class="sequence__label">
+        <span class="sequence__label-index" id="labelIndex" dir="ltr">01 / 10</span>
+        <span class="sequence__label-name" id="labelName">الفكرة</span>
+      </div>
+
+      <div class="sequence__progress">
+        <div class="sequence__progress-track">
+          <div class="sequence__progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Single dynamic editorial line — tied to the current frame only -->
+    <div class="editorial" id="editorial">
+      <p class="editorial__eyebrow" id="editorialEyebrow">الفكرة</p>
+      <p class="editorial__line" id="editorialLine">كل مشروع يبدأ بخط.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ FINAL REVEAL ============ -->
+<section class="reveal" id="reveal">
+  <img class="reveal__img" src="assets/images/sequence/Frame_10.jpg" alt="FORMA — الشكل المعماري المكتمل" decoding="async">
+  <div class="reveal__scrim" aria-hidden="true"></div>
+  <div class="reveal__overlay">
+    <p class="reveal__mark" dir="ltr">FORMA</p>
+    <h2 class="reveal__title">الشكل النهائي<br>حين تكتمل الفكرة.</h2>
+    <a href="#project" class="reveal__cta" data-hover>اكتشف المشروع</a>
+  </div>
+</section>
+
+<!-- ============ PROJECT — split, asymmetric ============ -->
+<section class="editorial-block editorial-block--split" id="project">
+  <div class="editorial-block__media">
+    <figure class="reveal-media reveal-media--main">
+      <img src="assets/images/gallery/gallery-03.jpg" alt="FORMA — واجهة المشروع الأمامية" loading="lazy" decoding="async">
+    </figure>
+    <figure class="reveal-media reveal-media--accent">
+      <img src="assets/images/gallery/gallery-01.jpg" alt="FORMA — منظر عام للمشروع" loading="lazy" decoding="async">
+    </figure>
+  </div>
+  <div class="editorial-block__text">
+    <p class="editorial-block__eyebrow">01</p>
+    <h3 class="editorial-block__title">المشروع</h3>
+    <p class="editorial-block__body">مشروع سكني معاصر صُمم ليوازن بين الكتلة والفراغ، وبين الضوء والخامة.</p>
+  </div>
+</section>
+
+<!-- ============ FACADE — full width ============ -->
+<section class="editorial-block editorial-block--full" id="facade">
+  <figure class="reveal-media reveal-media--full">
+    <img src="assets/images/gallery/gallery-08.jpg" alt="FORMA — الواجهة المعمارية عند الغروب" loading="lazy" decoding="async">
+    <figcaption class="reveal-media__inset">
+      <img src="assets/images/gallery/gallery-07.jpg" alt="FORMA — الواجهة من زاوية أخرى" loading="lazy" decoding="async">
+    </figcaption>
+  </figure>
+  <div class="editorial-block__caption">
+    <p class="editorial-block__eyebrow">02</p>
+    <h3 class="editorial-block__title">الواجهة</h3>
+    <p class="editorial-block__body">واجهة هادئة تعتمد على التوازن بين الحجر، الزجاج، والكتل المعمارية.</p>
+  </div>
+</section>
+
+<!-- ============ SPACE — two-image composition ============ -->
+<section class="editorial-block editorial-block--duo" id="space">
+  <div class="editorial-block__text">
+    <p class="editorial-block__eyebrow">03</p>
+    <h3 class="editorial-block__title">المساحة</h3>
+    <p class="editorial-block__body">مساحات داخلية مفتوحة صُممت لتسمح للضوء والحركة بأن يصبحا جزءًا من التجربة.</p>
+  </div>
+  <div class="editorial-block__media editorial-block__media--duo">
+    <figure class="reveal-media reveal-media--wide">
+      <img src="assets/images/gallery/gallery-05.jpg" alt="FORMA — صالة معيشة داخلية" loading="lazy" decoding="async">
+    </figure>
+    <figure class="reveal-media reveal-media--tall">
+      <img src="assets/images/gallery/gallery-04.jpg" alt="FORMA — مدخل المبنى الرئيسي" loading="lazy" decoding="async">
+    </figure>
+  </div>
+</section>
+
+<!-- ============ MATERIALS — vertical, editorial ============ -->
+<section class="editorial-block editorial-block--materials" id="materials">
+  <div class="editorial-block__media editorial-block__media--vertical">
+    <figure class="reveal-media reveal-media--tall">
+      <img src="assets/images/gallery/gallery-06.jpg" alt="FORMA — تفاصيل الحجر والخشب" loading="lazy" decoding="async">
+    </figure>
+    <figure class="reveal-media reveal-media--tall reveal-media--small">
+      <img src="assets/images/gallery/gallery-02.jpg" alt="FORMA — الزجاج والمعدن في الواجهة" loading="lazy" decoding="async">
+    </figure>
+  </div>
+  <div class="editorial-block__text">
+    <p class="editorial-block__eyebrow">04</p>
+    <h3 class="editorial-block__title">الخامات</h3>
+    <ul class="materials-list">
+      <li>الحجر</li>
+      <li>الخشب</li>
+      <li>الزجاج</li>
+      <li>المعدن</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ STUDIO ============ -->
+<section class="studio" id="studio">
+  <div class="studio__grid">
+    <p class="studio__eyebrow">الاستوديو</p>
+    <p class="studio__text"><span dir="ltr">FORMA</span> هو استوديو معماري يهتم بصناعة المساحات التي تتوازن فيها الفكرة مع المادة، والضوء مع الفراغ.</p>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process" id="process">
+  <div class="process__grid">
+    <p class="process__eyebrow">المنهج</p>
+    <div class="process__steps">
+      <div class="process__step"><span dir="ltr">01</span><p>الفكرة</p></div>
+      <div class="process__step"><span dir="ltr">02</span><p>التكوين</p></div>
+      <div class="process__step"><span dir="ltr">03</span><p>البناء</p></div>
+      <div class="process__step"><span dir="ltr">04</span><p>الخامة</p></div>
+      <div class="process__step"><span dir="ltr">05</span><p>التجربة</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / FOOTER ============ -->
+<footer class="contact" id="contact">
+  <p class="contact__eyebrow">تواصل</p>
+  <p class="contact__line">لنبدأ فكرة جديدة.</p>
+  <button type="button" class="contact__cta" data-hover>تواصل معنا</button>
+  <div class="contact__foot">
+    <span dir="ltr">FORMA</span>
+    <span>— استوديو معماري</span>
+    <span dir="ltr">&copy; 2026</span>
+  </div>
+</footer>
+
+<script src="js/animations.js" defer></script>
+<script src="js/sequence.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
